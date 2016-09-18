@@ -6,10 +6,6 @@ const routes:Routes = [
     path: '',
     redirectTo: 'myCourse',
     pathMatch: 'full'
-  },
-  {
-    path: 'ykComponentsDemo',
-    loadChildren: './shared/yk-components-demo/yk-components-demo.module'
   }
 ];
 

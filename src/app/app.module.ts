@@ -8,6 +8,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MyCourseComponent } from './myCourse/my-course.component';
 import { myCourseRouting } from './myCourse/my-course.routing';
+import { YkComponentsDemoModule } from './shared/yk-components-demo/yk-components-demo.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { myCourseRouting } from './myCourse/my-course.routing';
     FormsModule,
     HttpModule,
     NgbModule,
+    YkComponentsDemoModule,
     routing,
     myCourseRouting
   ],
