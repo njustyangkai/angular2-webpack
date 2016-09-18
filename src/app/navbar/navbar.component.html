@@ -1,0 +1,32 @@
+<nav class="navbar navbar-fixed-top navbar-dark bg-primary">
+  <a class="navbar-brand" routerLink="myCourse"><b>VENUS</b> </a>
+  <button class="navbar-toggler show-up pull-right"
+          (click)="sidebar.style.display == 'block'? sidebar.style.display = 'none' : sidebar.style.display = 'block'">
+    &#9776;
+  </button>
+</nav>
+<div class="sidebar" #sidebar>
+  <ul>
+    <li class="header">课程</li>
+    <li routerLinkActive="active">
+      <a routerLink="myCourse">
+        <i class="fa fa-calendar"></i>
+        我的课程
+      </a>
+    </li>
+    <li>
+      <a>
+        <i class="fa fa-th"></i>
+        在线排课
+      </a>
+    </li>
+    <li class="header">学生</li>
+    <li>
+      <a>
+        <i class="fa fa-user"></i>
+        学生管理
+      </a>
+    </li>
+  </ul>
+</div>
+
