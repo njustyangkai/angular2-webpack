@@ -2,14 +2,20 @@ import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 import { FullComponent } from './full.component';
 
-const routes:Routes = <Routes>[
+const routes:Routes = [
+  {
+    path: '',
+    redirectTo: 'main',
+    pathMatch: 'full'
+  },
   {
     path: 'main',
     component: FullComponent,
     children: [
       {
         path: '',
-        redirectTo: 'myCourse'
+        redirectTo: 'myCourse',
+        pathMatch: 'full'
       }
     ]
   }
