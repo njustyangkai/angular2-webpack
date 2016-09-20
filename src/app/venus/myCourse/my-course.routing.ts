@@ -2,7 +2,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 import { MyCourseComponent } from './my-course.component';
 
-const routes:Routes = [
+const routes:Routes = <Routes>[
   {
     path: 'myCourse',
     component: MyCourseComponent

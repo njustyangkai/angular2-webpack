@@ -2,9 +2,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 import { YkComponentsDemoNav } from './yk-components-demo.nav';
 
-const routes:Routes = [
+const routes:Routes = <Routes>[
   {
-    path: 'ykComponentsDemo',
+    path: 'demo',
     component: YkComponentsDemoNav
   }
 ];

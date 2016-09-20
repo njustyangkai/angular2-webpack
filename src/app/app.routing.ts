@@ -4,7 +4,7 @@ import { ModuleWithProviders } from '@angular/core';
 const routes:Routes = [
   {
     path: '',
-    redirectTo: 'myCourse',
+    redirectTo: 'main',
     pathMatch: 'full'
   }
 ];
