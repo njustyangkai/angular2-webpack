@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   template: `<div>test123123123123</div>`
 })
 
-export class YkComponentsDemoNav {
+export class YklibDemo {
   
 }

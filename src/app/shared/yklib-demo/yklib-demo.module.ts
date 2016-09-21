@@ -3,23 +3,23 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ykComponentsDemoRouting } from './yk-components-demo.routing';
-import { YkComponentsDemoNav } from './yk-components-demo.nav';
+import { yklibDemoRouting } from './yklib-demo.routing.ts';
+import { YklibDemo } from './yklib-demo.main.ts';
 
 
 @NgModule({
   declarations: [
-    YkComponentsDemoNav
+    YklibDemo
   ],
   imports: [
     FormsModule,
     HttpModule,
     NgbModule,
     BrowserModule,
-    ykComponentsDemoRouting
+    yklibDemoRouting
   ],
   providers: []
 })
 
-export class YkComponentsDemoModule {
+export class YklibDemoModule {
 }

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { routing, appRoutingProviders } from './app.routing';
 import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
-import { YkComponentsDemoModule } from './shared/yk-components-demo/yk-components-demo.module';
+import { YklibDemoModule } from 'shared/yklib-demo/yklib-demo.module.ts';
 import { FullModule } from './venus/full.module';
 
 @NgModule({
@@ -12,7 +12,7 @@ import { FullModule } from './venus/full.module';
   imports: [
     BrowserModule,
     FullModule,
-    YkComponentsDemoModule,
+    YklibDemoModule,
     routing
   ],
   providers: [appRoutingProviders],
