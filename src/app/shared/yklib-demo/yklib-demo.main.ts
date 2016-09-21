@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  template: `<div>test123123123123</div>`
+  templateUrl: './yklib-demo.main.html'
 })
 
 export class YklibDemo {

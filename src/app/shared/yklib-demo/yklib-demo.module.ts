@@ -5,17 +5,21 @@ import { HttpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { yklibDemoRouting } from './yklib-demo.routing';
 import { YklibDemo } from './yklib-demo.main';
+import { YkNavDemoComponent } from './yk-nav-demo/yk-nav-demo.component';
+import { YklibModule } from '../yklib/yklib.module';
 
 
 @NgModule({
   declarations: [
-    YklibDemo
+    YklibDemo,
+      YkNavDemoComponent
   ],
   imports: [
     FormsModule,
     HttpModule,
     NgbModule,
     BrowserModule,
+    YklibModule,
     yklibDemoRouting
   ],
   providers: []
