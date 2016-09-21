@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { routing, appRoutingProviders } from './app.routing';
 import { AppComponent } from './app.component';
-import { BrowserModule } from '@angular/platform-browser';
-import { YklibDemoModule } from 'shared/yklib-demo/yklib-demo.module.ts';
+import { YklibDemoModule } from './shared/yklib-demo/yklib-demo.module';
 import { FullModule } from './venus/full.module';
 
 @NgModule({
