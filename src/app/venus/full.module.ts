@@ -8,7 +8,6 @@ import { FullComponent } from './full.component';
 import { fullRouting } from './full.routing';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MyCourseComponent } from './myCourse/my-course.component';
-import { myCourseRouting } from './myCourse/my-course.routing';
 
 @NgModule({
     declarations: [
@@ -21,8 +20,7 @@ import { myCourseRouting } from './myCourse/my-course.routing';
         FormsModule,
         HttpModule,
         NgbModule,
-        fullRouting,
-        myCourseRouting
+        fullRouting
     ],
     providers: []
 })

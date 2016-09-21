@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { routing } from './app.routing';
+import { routing, appRoutingProviders } from './app.routing';
 import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { YkComponentsDemoModule } from './shared/yk-components-demo/yk-components-demo.module';
@@ -15,7 +15,7 @@ import { FullModule } from './venus/full.module';
     YkComponentsDemoModule,
     routing
   ],
-  providers: [],
+  providers: [appRoutingProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule {
