@@ -5,9 +5,4 @@ import { Component } from '@angular/core';
     styleUrls: ['./full.component.css']
 })
 export class FullComponent {
-    minHeight:string;
-
-    constructor() {
-        this.minHeight = window.innerHeight + 'px';
-    }
 }
