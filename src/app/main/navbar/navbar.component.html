@@ -1,0 +1,35 @@
+<header class="main-header">
+    <a class="logo" role="button">
+        <span class="logo-mini"><b>Y</b>A</span>
+        <span class="logo-lg"><b>Yangkai</b>Angular2</span>
+    </a>
+
+    <nav class="navbar navbar-static-top">
+        <a class="sidebar-toggle" role="button" (click)="collapse()">
+            <span class="sr-only">Toggle navigation</span>
+        </a>
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a role="button" (click)="setTheme()">主题</a>
+                </li>
+                <li dropdown class="user-menu">
+                    <a role="button" dropdownToggle>
+                        <span class="hidden-xs">用户名</span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul dropdownMenu>
+                        <li class="user-body">
+                            <div class="pull-left">
+                                <a role="button" class="btn btn-default btn-flat">我的账户</a>
+                            </div>
+                            <div class="pull-right">
+                                <a role="button" class="btn btn-default btn-flat">退出</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>

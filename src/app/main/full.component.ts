@@ -1,11 +1,22 @@
 import { Component } from '@angular/core';
 
 @Component({
-    templateUrl: './full.component.html',
-    styleUrls: ['./full.component.css']
+  templateUrl: './full.component.html',
+  styleUrls: ['./full.component.css']
 })
 export class FullComponent {
-    singleModel:string = '1';
-    radioModel:string = 'Middle';
-    checkModel:any = {left: false, middle: true, right: false};
+  theme:string = 'skin-blue-light';
+  collapsed:boolean = false;
+
+  changeTheme(theme:string) {
+    this.theme = 'skin-' + theme;
+  }
+
+  collapse(e:boolean) {
+    this.collapsed = e;
+  }
+  
+  setTheme() {
+    return this.theme;
+  }
 }

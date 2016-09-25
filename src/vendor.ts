@@ -9,6 +9,8 @@ import '@angular/router';
 import 'rxjs';
 // Other vendors for example jQuery, Lodash or Bootstrap
 // You can import js, ts, css, sass, ...
+import '../public/css/AdminLTE.min.css';
+import '../public/css/skins/_all-skins.min.css';
 import '../public/css/bootstrap.min.css';
 import '../public/css/bootstrap-theme.min.css';
 import '../public/css/font-awesome.min.css';

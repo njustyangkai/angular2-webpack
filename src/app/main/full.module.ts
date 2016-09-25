@@ -4,23 +4,28 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 
 import { ButtonsModule } from 'ng2-bootstrap/ng2-bootstrap';
+import { DropdownModule } from 'ng2-bootstrap/ng2-bootstrap';
 
 import { FullComponent } from './full.component';
 import { fullRouting } from './full.routing';
-
+import { NavbarComponent } from './navbar/navbar.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 @NgModule({
-    declarations: [
-        FullComponent
-    ],
-    imports: [
-        BrowserModule,
-        FormsModule,
-        HttpModule,
-        ButtonsModule,
-        fullRouting
-    ],
-    providers: []
+  declarations: [
+    FullComponent,
+    NavbarComponent,
+    ToolbarComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    ButtonsModule,
+    DropdownModule,
+    fullRouting
+  ],
+  providers: []
 })
 export class FullModule {
 }
