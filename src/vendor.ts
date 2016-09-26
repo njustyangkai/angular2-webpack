@@ -14,4 +14,8 @@ import '../public/css/skins/_all-skins.min.css';
 import '../public/css/bootstrap.min.css';
 import '../public/css/bootstrap-theme.min.css';
 import '../public/css/font-awesome.min.css';
+import '../public/css/theme.css';
+import '../public/css/button.css';
+import '../public/css/input.css';
+import '../public/css/select.css';
 import '../public/css/main.css';

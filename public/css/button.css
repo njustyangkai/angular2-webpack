@@ -1,0 +1,107 @@
+a:focus, a:hover {
+    text-decoration: none;
+}
+
+button, input {
+    outline: 0;
+}
+
+button:active {
+    outline: 0;
+}
+
+.btn-normal {
+    border: 0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    height: 30px;
+    min-width: 100px;
+    color: #ffffff;
+    background-color: #1898eb;
+    padding: 0 20px;
+}
+
+.btn-normal:hover {
+    background-color: #178fdd;
+    color: #fff;
+}
+
+.btn-normal:active {
+    background-color: #127dc2;
+    border: 0;
+}
+
+.btn-normal:focus {
+    color: #fff;
+}
+
+.btn-normal:disabled {
+    background-color: #e6e6e6;
+    color: #bbbbbb
+}
+
+.btn-cancel {
+    border: 0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    height: 30px;
+    min-width: 100px;
+    color: #1898eb;
+    background-color: #ffffff;
+    padding: 6.5px 35px;
+}
+
+.btn-cancel:hover {
+    background-color: #eeeeee;
+}
+
+.btn-default {
+    background: none;
+    text-shadow: none;
+}
+
+.btn:active {
+    box-shadow: none;
+}
+
+.btn-default:hover, .btn-default:focus {
+    background-color: #ffffff;
+    border-color: #1898eb;
+}
+
+.btn-default:active {
+    background-color: #1898eb !important;
+    color: #ffffff !important;
+}
+
+.btn-create {
+    border: 0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    height: 30px;
+    min-width: 90px;
+    color: #ffffff;
+    background-color: #5cb85c;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: inline-block;
+    align-items: flex-end;
+    padding: 7px 12px;
+    text-align: center;
+}
+
+.btn-create:hover, .btn-create:focus {
+    background-color: #53ad53;
+    color: #ffffff;
+}
+
+.btn-create i {
+    margin-right: 12px;
+}

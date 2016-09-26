@@ -10,22 +10,24 @@ import { FullComponent } from './full.component';
 import { fullRouting } from './full.routing';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { BoxComponent } from './box/box.component';
 
 @NgModule({
-  declarations: [
-    FullComponent,
-    NavbarComponent,
-    ToolbarComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule,
-    ButtonsModule,
-    DropdownModule,
-    fullRouting
-  ],
-  providers: []
+    declarations: [
+        FullComponent,
+        NavbarComponent,
+        ToolbarComponent,
+        BoxComponent
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        HttpModule,
+        ButtonsModule,
+        DropdownModule,
+        fullRouting
+    ],
+    providers: []
 })
 export class FullModule {
 }

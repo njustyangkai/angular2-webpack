@@ -4,4 +4,7 @@
      [class.sidebar-open]="!collapsed">
     <navbar (changeTheme)="changeTheme($event)" (sidebarCollapse)="collapse($event)"></navbar>
     <toolbar></toolbar>
+    <div class="content-wrapper">
+        <router-outlet></router-outlet>
+    </div>
 </div>
