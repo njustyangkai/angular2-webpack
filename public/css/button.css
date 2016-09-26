@@ -2,7 +2,7 @@ a:focus, a:hover {
     text-decoration: none;
 }
 
-button, input {
+button {
     outline: 0;
 }
 
