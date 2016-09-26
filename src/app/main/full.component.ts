@@ -7,15 +7,21 @@ import { Component } from '@angular/core';
 export class FullComponent {
   theme:string = 'skin-blue-light';
   collapsed:boolean = false;
+  opened:boolean = false;
 
   changeTheme(theme:string) {
     this.theme = 'skin-' + theme;
   }
 
   collapse(e:boolean) {
-    this.collapsed = e;
+    let width = window.innerWidth;
+    if (width < 768) {
+      this.opened = e;
+    } else {
+      this.collapsed = e;
+    }
   }
-  
+
   setTheme() {
     return this.theme;
   }

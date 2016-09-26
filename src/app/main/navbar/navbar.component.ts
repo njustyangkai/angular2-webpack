@@ -11,6 +11,7 @@ export class NavbarComponent{
   collapsed:boolean;
   @Output() changeTheme = new EventEmitter<string>();
   @Output() sidebarCollapse = new EventEmitter<boolean>();
+  @Output() sidebarOpen = new EventEmitter<boolean>();
 
   constructor() {
     this.themes = ['blue', 'blue-light', 'green', 'green-light', 'purple', 'purple-light', 'red', 'red-light', 'yellow', 'yellow-light'];

@@ -1,7 +1,7 @@
 <div class="hold-transition sidebar-mini fixed"
      [ngClass]="setTheme()"
      [class.sidebar-collapse]="collapsed"
-     [class.sidebar-open]="!collapsed">
+     [class.sidebar-open]="opened">
     <navbar (changeTheme)="changeTheme($event)" (sidebarCollapse)="collapse($event)"></navbar>
     <toolbar></toolbar>
     <div class="content-wrapper">
