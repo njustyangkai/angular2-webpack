@@ -105,3 +105,8 @@ button:active {
 .btn-create i {
     margin-right: 12px;
 }
+
+.btn {
+    font-size: 12px;
+    font-weight: normal;
+}
