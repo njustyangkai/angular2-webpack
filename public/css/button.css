@@ -2,11 +2,7 @@ a:focus, a:hover {
     text-decoration: none;
 }
 
-button {
-    outline: 0;
-}
-
-button:active {
+button, button:active, button:visited, button:focus, button:hover {
     outline: 0;
 }
 

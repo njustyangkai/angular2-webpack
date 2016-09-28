@@ -11,13 +11,17 @@ import { fullRouting } from './full.routing';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { BoxComponent } from './box/box.component';
+import { ButtonComponent } from './button/button.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
     declarations: [
         FullComponent,
         NavbarComponent,
         ToolbarComponent,
-        BoxComponent
+        DashboardComponent,
+        BoxComponent,
+        ButtonComponent
     ],
     imports: [
         BrowserModule,
