@@ -1,10 +1,14 @@
-<div class="hold-transition sidebar-mini fixed"
+<div class="hold-transition sidebar-mini"
      [ngClass]="setTheme()"
      [class.sidebar-collapse]="collapsed"
-     [class.sidebar-open]="opened">
-    <navbar (changeTheme)="changeTheme($event)" (sidebarCollapse)="collapse($event)"></navbar>
-    <toolbar></toolbar>
-    <div class="content-wrapper">
-        <router-outlet></router-outlet>
+     [class.sidebar-open]="opened"
+     [class.fixed]="!boxed"
+     [class.layout-boxed]="boxed">
+    <div class="wrapper">
+        <navbar (changeTheme)="changeTheme($event)" (sidebarCollapse)="collapse($event)" (layout)="changeLayout($event)"></navbar>
+        <toolbar></toolbar>
+        <div class="content-wrapper">
+            <router-outlet></router-outlet>
+        </div>
     </div>
 </div>

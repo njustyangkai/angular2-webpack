@@ -8,6 +8,7 @@ export class FullComponent {
   theme:string = 'skin-blue-light';
   collapsed:boolean = false;
   opened:boolean = false;
+  boxed:boolean = false;
 
   changeTheme(theme:string) {
     this.theme = 'skin-' + theme;
@@ -24,5 +25,9 @@ export class FullComponent {
 
   setTheme() {
     return this.theme;
+  }
+  
+  changeLayout(e:boolean) {
+    this.boxed = e;
   }
 }

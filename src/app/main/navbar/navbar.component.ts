@@ -9,13 +9,15 @@ import { Component, Output, EventEmitter } from '@angular/core';
 export class NavbarComponent{
   themes:string[];
   collapsed:boolean;
+  boxed:boolean;
   @Output() changeTheme = new EventEmitter<string>();
   @Output() sidebarCollapse = new EventEmitter<boolean>();
-  @Output() sidebarOpen = new EventEmitter<boolean>();
+  @Output() layout = new EventEmitter<boolean>();
 
   constructor() {
     this.themes = ['blue', 'blue-light', 'green', 'green-light', 'purple', 'purple-light', 'red', 'red-light', 'yellow', 'yellow-light'];
     this.collapsed = false;
+    this.boxed = false;
   }
 
   setTheme() {
@@ -27,5 +29,10 @@ export class NavbarComponent{
   collapse() {
     this.collapsed = !this.collapsed;
     this.sidebarCollapse.emit(this.collapsed);
+  }
+  
+  setLayout() {
+    this.boxed = !this.boxed;
+    this.layout.emit(this.boxed);
   }
 }
