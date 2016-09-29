@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 
 export class ToolbarComponent {
   dashboardActive:boolean = false;
+  formActive:boolean = false;
 }
