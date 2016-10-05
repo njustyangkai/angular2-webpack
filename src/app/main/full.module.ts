@@ -13,6 +13,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { BoxComponent } from './box/box.component';
 import { ButtonComponent } from './button/button.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { GeneralFormComponent } from './form/general-form.component';
 
 @NgModule({
     declarations: [
@@ -21,7 +22,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
         ToolbarComponent,
         DashboardComponent,
         BoxComponent,
-        ButtonComponent
+        ButtonComponent,
+        GeneralFormComponent
     ],
     imports: [
         BrowserModule,
